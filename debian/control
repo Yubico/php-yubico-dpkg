@@ -1,0 +1,22 @@
+Source: php-yubico
+Section: web
+Priority: optional
+Maintainer: Yubico Open Source Maintainers <ossmaint@yubico.com>
+Uploaders: Simon Josefsson <simon@josefsson.org>, Klas Lindfors <klas@yubico.com>
+Build-Depends: debhelper (>= 7), dh-make-php (>= 0.2.3), cdbs
+Standards-Version: 3.9.3
+Homepage: https://code.google.com/p/php-yubico/
+DM-Upload-Allowed: yes
+Vcs-Git: git://github.com/Yubico/php-yubico-dpkg.git
+Vcs-Browser: https://github.com/Yubico/php-yubico-dpkg
+
+Package: php-yubico
+Architecture: all
+Depends: php-pear, php5-curl, ${misc:Depends} 
+Description: PHP PEAR class for verifying Yubico OTP tokens
+ YubiKeys are USB tokens that act like keyboards and generate
+ one-time passwords.
+ .
+ This PHP class is used for talking to an online validation
+ server such as yubikey-server-c, yubikey-server-php or
+ yubikey-server-j.

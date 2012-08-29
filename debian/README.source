@@ -1,0 +1,10 @@
+This is the recommended way to get and work with the package sources.
+
+To load a new upstream release:
+
+Unpack it in the upstream branch, copying package.xml to the root tag it
+as upstream/version, then merge upstream/version to master.
+
+To build the package:
+
+git-buildpackage
